@@ -139,3 +139,9 @@ body {
 .card-title-after[data-icon="youtube"]::after {
   background-image: url("../images/icon-youtube.svg");
 }
+
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
