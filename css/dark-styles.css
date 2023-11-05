@@ -24,4 +24,15 @@ body {
     background-color: #a21a1a;
     border: 1px solid #fff;
   }
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-image {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; 
+  }
   

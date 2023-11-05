@@ -25,3 +25,14 @@ body {
     border: 1px solid #333;
   }
   
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-image {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; 
+  }
