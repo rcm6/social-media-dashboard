@@ -8,6 +8,11 @@
 
   <!-- Include Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Default Style Sheet-->
+  <link rel="stylesheet" href="css/styles.css" id="styleSheet">
+
+ 
 </head>
 <body>
   <div class="container mt-5">
@@ -17,6 +22,24 @@
       <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
       <label class="custom-control-label" for="darkModeSwitch">Dark Mode</label>
     </div>
+    <script>
+      // Function to toggle dark mode
+      function toggleDarkMode() {
+        const styleSheet = document.getElementById('styleSheet');
+        if (styleSheet.getAttribute('href') === 'css/dark-styles.css') {
+          styleSheet.setAttribute('href', 'css/styles.css'); // default stylesheet
+        } else {
+          styleSheet.setAttribute('href', 'css/dark-styles.css'); // dark mode stylesheet
+        }
+      }
+    
+      const darkModeSwitch = document.getElementById('darkModeSwitch');
+    
+      darkModeSwitch.addEventListener('change', () => {
+        toggleDarkMode();
+      });
+    </script>
+    
 
     <!-- Bootstrap Cards for Social Media Stats -->
     <div class="row mt-5">
@@ -152,7 +175,10 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
-  <!-- Include Bootstrap JavaScript -->
+  <!-- Include Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Include Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 </html>

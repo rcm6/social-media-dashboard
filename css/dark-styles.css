@@ -1,0 +1,27 @@
+/* dark-styles.css - Dark Theme */
+body {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .card {
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .custom-control-label::before {
+    background-color: #000; /* Background color for the switch */
+    border-color: #000; /* Border color for the switch */
+  }
+  
+  .custom-control-label::after {
+    background-color: #fff; /* Color of the switch itself when toggled */
+    border-color: #000; /* Border color of the switch when toggled */
+  }
+  
+  #darkModeSwitch:checked + .custom-control-label::before {
+    background-color: #a21a1a;
+    border: 1px solid #fff;
+  }
+  
