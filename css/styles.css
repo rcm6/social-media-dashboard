@@ -79,7 +79,7 @@ body {
 .card-title-before[data-icon="youtube"]::before {
   background-image: url("../images/icon-youtube.svg");
 }
-
+/*
 .card-title-after[data-icon]::after {
   content: "";
   display: inline-block;
@@ -106,3 +106,36 @@ body {
   content: url("../images/icon-youtube.svg");
 }
 
+*/
+
+
+.card-title-after[data-icon] {
+  display: flex;
+  justify-content: space-between; /* Create space between icon and text */
+  align-items: center;
+}
+
+.card-title-after[data-icon]::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.card-title-after[data-icon="facebook"]::after {
+  background-image: url("../images/icon-facebook.svg");
+}
+
+.card-title-after[data-icon="twitter"]::after {
+  background-image: url("../images/icon-twitter.svg");
+}
+
+.card-title-after[data-icon="instagram"]::after {
+  background-image: url("../images/icon-instagram.svg");
+}
+
+.card-title-after[data-icon="youtube"]::after {
+  background-image: url("../images/icon-youtube.svg");
+}
